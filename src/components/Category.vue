@@ -5,7 +5,13 @@
             {{category.title}}
             <button @click="$emit('del-category', category.id)" class="del">x</button>
         </p>
-            
+        <div>
+            <img class="goal-image" v-bind:src="category.resolution.image"/>
+        </div>
+          
+        <p> 
+            {{category.resolution.motivation}}
+        </p>
     </div>
 
 </template>
@@ -23,10 +29,14 @@ export default {
 </script>
 
 <style scoped>
-    .category-item {
-        background:grey;
+    .category-unit {
+        margin: 10px;
+        margin-top: 25px;
+        background:white;
         padding: 10px;
-        border-bottom: 1px #ccc dotted;
+        border: 1px black dotted;
+        display: flex;
+        justify-content: space-evenly;
     }
 
     .is-complete {
@@ -37,9 +47,12 @@ export default {
         color: #ffff;
         border: none;
         padding: 5px 9px;
-        border-radius: 50%;
+        border-radius: 10%;
         cursor: pointer;
-        float: right
+    }
+
+    .goal-image{
+        width: 110px;
     }
 
 </style>

@@ -4,7 +4,8 @@
     <nav>
     <router-link :to="{name: 'Home'}">Home</router-link>
     <router-link to="/about">About</router-link>
-    <router-link to="/category">Categories</router-link>
+    <router-link to="/categories">Categories</router-link>
+    <router-link to="/signin">Login</router-link>
     </nav>
   <router-view></router-view>
   </div>
@@ -20,20 +21,6 @@ export default {
     Header,
     Categories,
   },
-  data(){
-    categories: [
-      {
-          id: 1, 
-          title: "Mind",
-          completed: true
-        },
-        {
-          id: 2,
-          title: "Body",
-          completed: true
-        },
-    ]
-  }
 }
 </script>
 
@@ -54,7 +41,6 @@ nav a{
  text-decoration: none;
  font-size: 20px;
  color: #2c3e50;
- background-color: white;
  padding: 10px;
  margin: 20px;
  border-radius: 3px

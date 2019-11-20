@@ -2,6 +2,8 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Home from '@/components/Home'
 import About from '@/components/About'
+import Categories from '@/components/Categories'
+import SignIn from '@/components/SignIn'
 
 Vue.use(Router)
 
@@ -16,6 +18,16 @@ export default new Router({
       path: '/about',
       name: 'About',
       component: About
+    },
+    {
+      path: '/categories',
+      name: 'Categories',
+      component: Categories
+    },
+    {
+      path: '/signin',
+      name: 'SignIn',
+      component: SignIn
     }
   ]
 })

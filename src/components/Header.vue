@@ -1,6 +1,7 @@
 <template>
     <header class="header">
-        <h1 class="head-line">Resolute</h1>
+        <h1 class="head-line">Res·o·lute</h1>
+        <h5>admirably purposeful, determined, and unwavering.</h5>
     </header>
 </template>
 
@@ -12,14 +13,14 @@ export default {
 
 <style scoped>
 
-@import url('https://fonts.googleapis.com/css?family=Sedgwick+Ave&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+SC&display=swap');
 
     .header {
-        background: lightseagreen;
+        background: #233964;
         color: #ffff;
         text-align: center;
         padding: 20px;
-        font-family: 'Sedgwick Ave', cursive;
+        font-family: 'Noto Sans SC', sans-serif;
         font-size: 30px;
     }
 
@@ -32,7 +33,7 @@ export default {
         border-color: black;
         border: 4px solid white;
         padding: 12px;
-        letter-spacing: 6px;
+        letter-spacing: 2px;
     
     }
 
