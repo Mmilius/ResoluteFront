@@ -6,8 +6,11 @@
     <router-link to="/about">About</router-link>
     <router-link to="/categories">Categories</router-link>
     <router-link to="/signin">Login</router-link>
+    <router-link to="/newresolution">Add Resolution</router-link>
     </nav>
-  <router-view></router-view>
+  <router-view>
+
+  </router-view>
   </div>
 </template>
 
@@ -40,14 +43,14 @@ nav{
 nav a{
  text-decoration: none;
  font-size: 20px;
- color: #2c3e50;
+ color: #233964;
  padding: 10px;
  margin: 20px;
  border-radius: 3px
 }
 
 nav a:hover{
-  background-color: #2c3e50;
+  background-color: #233964;
   color: white;
 
 }

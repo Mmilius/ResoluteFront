@@ -4,6 +4,7 @@ import Home from '@/components/Home'
 import About from '@/components/About'
 import Categories from '@/components/Categories'
 import SignIn from '@/components/SignIn'
+import NewResolution from '@/components/NewResolution'
 
 Vue.use(Router)
 
@@ -28,6 +29,12 @@ export default new Router({
       path: '/signin',
       name: 'SignIn',
       component: SignIn
+    },
+    {
+      path: '/newresolution',
+      name: 'NewResolution',
+      component: NewResolution
     }
+
   ]
 })

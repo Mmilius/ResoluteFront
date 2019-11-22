@@ -1,7 +1,7 @@
 <template>
     <header class="header">
         <h1 class="head-line">Res·o·lute</h1>
-        <h5>admirably purposeful, determined, and unwavering.</h5>
+        <h5 class="sub-head">admirably purposeful, determined, and unwavering.</h5>
     </header>
 </template>
 
@@ -22,6 +22,7 @@ export default {
         padding: 20px;
         font-family: 'Noto Sans SC', sans-serif;
         font-size: 30px;
+        height: 220px;
     }
 
     .header a{
@@ -37,5 +38,8 @@ export default {
     
     }
 
+    .sub-head{
+      margin-top: -20px;
+    }
 
 </style>
